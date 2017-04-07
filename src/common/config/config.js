@@ -10,10 +10,8 @@ export default {
     timeout: 10,
     cors:{
         origin:"*",                         //Access-Control-Allow-Origin
-        methods:"*",                 //Access-Control-Allow-Methods
+        methods:"GET,HEAD,PUT,PATCH,POST,DELETE",                 //Access-Control-Allow-Methods
         credentials:true,                   //Access-Control-Allow-Credentials
-        allowedHeaders:"GET,HEAD,PUT,PATCH,POST,DELETE",     //Access-Control-Allow-Headers
-        maxAge:1000,                        //Access-Control-Max-Age  for the OPTIONS request
         preflightContinue:true              // for the OPTIONS request
     }
 };

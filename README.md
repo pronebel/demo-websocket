@@ -1,5 +1,5 @@
 
-##说明
+## 说明
 项目是直接thinkjs new 出来的。
 只是加了一个think-cors中间件，开了websocket。
 
