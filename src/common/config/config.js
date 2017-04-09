@@ -12,6 +12,7 @@ export default {
         origin:"*",                         //Access-Control-Allow-Origin
         methods:"GET,HEAD,PUT,PATCH,POST,DELETE",                 //Access-Control-Allow-Methods
         credentials:true,                   //Access-Control-Allow-Credentials
-        preflightContinue:true              // for the OPTIONS request
+        preflightContinue:true,              // for the OPTIONS request
+      //  exclude:['/home/socketio/open']
     }
 };

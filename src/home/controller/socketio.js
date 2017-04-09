@@ -7,13 +7,24 @@ export default class extends think.controller.base {
   openAction(self){
     var socket = self.http.socket;
     console.log("in openAction");
-    this.broadcast('new message', {
-      username: socket.username,
-      message: self.http.data
-    });
+
+      this.emit('bbb2', {
+          username: 11,
+          message: 22
+      });
+    this.broadcast('ccc','dddd');
   }
   testAction(self){
-    var socket = self.http.socket;
+        var socket = self.http.socket;
+        console.log("in testAction");
+
+        this.emit('bbb', {
+            username: 11,
+            message: 22
+        });
+    }
+  test2Action(self){
+      this.json({name: 'thinkjs'});
     console.log("in testAction");
   }
 }
